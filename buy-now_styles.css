@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle, #0f0f0f, #1a1a1a);
+    color: cyan; /* Set all text color to cyan */
+    text-transform: uppercase;
+}
+
+/* Marquee Styling */
+/* Marquee Styling */
+.marquee-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: cyan;
+    background: rgba(0, 255, 255, 0.2);
+    padding: 12px;
+    border-bottom: 3px solid cyan;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+/* Website Header (Logo + Name) Styling */
+.website-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.Website_logo img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.Website_name {
+    font-size: 42px;
+    font-weight: 500;
+    color: cyan;
+    text-shadow: 0 0 1px cyan, 0 0 20px cyan, 0 0 30px cyan;
+    letter-spacing: 4px;
+}
+
+/* Navigation Bar */
+.navbar {
+    border-bottom: 3px solid cyan;
+    box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.4);
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 18px;
+    color: white !important;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: cyan !important;
+}
+
+/* Heading Styling */
+.text-cyan {
+    color: cyan;
+    text-shadow: 0 0 1px cyan, 0 0 20px cyan, 0 0 30px cyan;
+    margin-bottom: 30px;
+}
+
+/* Dropdown Styling */
+.form-label {
+    color: cyan; /* Set dropdown label text color to cyan */
+}
+
+.form-select {
+    background-color: #1a1a1a;
+    color: cyan; /* Set dropdown text color to cyan */
+    border: 1px solid cyan;
+}
+
+.form-select:focus {
+    border-color: cyan;
+    box-shadow: 0 0 5px cyan;
+}
+
+/* Button Styling */
+.BuyNowBtn {
+    background-color: transparent; /* Transparent background */
+    color: cyan; /* Button text color */
+    border: 1px solid cyan; /* Cyan border */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.BuyNowBtn:hover {
+    background-color: cyan; /* Cyan background on hover */
+    color: black; /* Black text on hover */
+    border-radius: 10px; /* Border Corner Curve */
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+
+/* Ensure dropdowns are properly aligned */
+#product-container, #buy-now-container {
+    display: none;
+    margin-top: 15px; /* Adds space between dropdowns */
+}
+
+.row.justify-content-center > div {
+    max-width: 400px; /* Ensures both dropdowns are the same width */
+    width: 100%;
+    margin: auto; /* Center the dropdowns */
+}
+
+
+/* Footer */
+footer {
+    background: #0f0f0f;
+    color: cyan; /* Set footer text color to cyan */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: cyan;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-cyan {
+        font-size: 28px;
+    }
+
+    .btn-cyan {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

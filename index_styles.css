@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle, #0f0f0f, #1a1a1a);
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Marquee Styling */
+.marquee-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: cyan;
+    background: rgba(0, 255, 255, 0.2);
+    padding: 12px;
+    border-bottom: 3px solid cyan;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+/* Website Header (Logo + Name) Styling */
+.website-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.Website_logo img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.Website_name {
+    font-size: 42px;
+    font-weight: 500;
+    color: cyan;
+    text-shadow: 0 0 1px cyan, 0 0 20px cyan, 0 0 30px cyan;
+    letter-spacing: 4px;
+}
+
+.website-creator {
+    font-size: 18px;
+    color: cyan; /* Same cyan color */
+    margin-top: 5px;
+}
+
+/* Navigation Bar */
+.navbar {
+    border-bottom: 3px solid cyan;
+    box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.4);
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 18px;
+    color: white !important;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: cyan !important;
+}
+
+/* Welcome Text Styling */
+h1.text-cyan {
+    color: cyan; /* Set "Welcome to Dynamic Regedit!" text to cyan */
+    text-shadow: 0 0 1px cyan, 0 0 20px cyan, 0 0 30px cyan; /* Optional: Add a glow effect */
+    margin-bottom: 30px;
+}
+
+/* Feature Section */
+.feature-item {
+    background: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
+    border: 2px solid cyan;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px auto;
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+}
+
+.feature-item img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 12px; /* Adds slight rounding to the image */
+    margin-bottom: 10px;
+}
+
+.feature-item h3, .feature-item p {
+    color: cyan; /* Set text color to cyan */
+}
+
+/* Button Styling for "Buy Now" */
+.btn-cyan {
+    background-color: cyan; /* Set button background to cyan */
+    color: black; /* Set text color to black */
+    border: none; /* Remove the border */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: 0.3s;
+}
+
+.btn-cyan:hover {
+    background-color: #00b3b3; /* Darker cyan on hover */
+    color: white; /* Set text color to white on hover */
+}
+
+/* Footer */
+footer {
+    background: #0f0f0f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: cyan;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Website_name {
+        font-size: 36px;
+    }
+
+    .website-header {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .feature-item {
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .feature-item img {
+        width: 80px; /* Adjust size for smaller screens */
+        height: 80px; /* Adjust size for smaller screens */
+    }
+}
